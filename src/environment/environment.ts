@@ -31,5 +31,119 @@ export const environment = {
         details: 'I have good knowledge in vanilla Node.js. I have developed few backend APIs using express.'
       },
     ],
+    myself:
+    {
+      name: 'Bhuwan Krishna Som Poudel',
+      image: '../assets/images/my-image.png',
+      phone: '004581916893',
+      email: 'bkspoudel@gmail.com',
+      linkedIn: 'https://www.linkedin.com/feed/',
+      gitHub: 'https://github.com/sudhansom?tab=repositories',
+      address: 'Copenhagen, Denmark',
+    },
+    experience : [
+      {
+        type: 'Education',
+        all: [
+          {
+            name: 'Norwegian University of Science and Technology',
+            position: 'Masters Degree in Information Systems',
+            address: 'Trondheim, Norway',
+            data: '08/2011 - 10/2014',
+            features: [
+              'Web Intelligence',
+              'Software Security',
+              'Model Driven Development of Information Systems',
+              'Customer Driven Project',
+              'Software Quality and Process Improvement',
+            ],
+            note: 'Learned Norwegian language for a year and completed 30 credits',
+          },
+          {
+            name: 'Norwegian University of Science and Technology',
+            position: 'Masters Degree in Information Systems',
+            address: 'Trondheim, Norway',
+            data: '08/2011 - 10/2014',
+            features: [
+              'Web Intelligence',
+              'Software Security',
+              'Model Driven Development of Information Systems',
+              'Customer Driven Project',
+              'Software Quality and Process Improvement',
+            ],
+            note: 'Learned Norwegian language for a year and completed 30 credits',
+          },
+        ]
+      },
+      {
+        type: 'Work Experience',
+        all: [
+          {
+            name: 'Norwegian University of Science and Technology',
+            position: 'Masters Degree in Information Systems',
+            address: 'Trondheim, Norway',
+            data: '08/2011 - 10/2014',
+            features: [
+              'Web Intelligence',
+              'Software Security',
+              'Model Driven Development of Information Systems',
+              'Customer Driven Project',
+              'Software Quality and Process Improvement',
+            ],
+            note: 'Learned Norwegian language for a year and completed 30 credits',
+          },
+          {
+            name: 'Norwegian University of Science and Technology',
+            position: 'Masters Degree in Information Systems',
+            address: 'Trondheim, Norway',
+            data: '08/2011 - 10/2014',
+            features: [
+              'Web Intelligence',
+              'Software Security',
+              'Model Driven Development of Information Systems',
+              'Customer Driven Project',
+              'Software Quality and Process Improvement',
+            ],
+            note: 'Learned Norwegian language for a year and completed 30 credits',
+          },
+        ]
+      },
+      {
+        type: 'Leadership Experience',
+        all: [
+          {
+            name: 'Norwegian University of Science and Technology',
+            position: 'Masters Degree in Information Systems',
+            address: 'Trondheim, Norway',
+            data: '08/2011 - 10/2014',
+            features: [
+              'Web Intelligence',
+              'Software Security',
+              'Model Driven Development of Information Systems',
+              'Customer Driven Project',
+              'Software Quality and Process Improvement',
+            ],
+            note: 'Learned Norwegian language for a year and completed 30 credits',
+          },
+          {
+            name: 'Norwegian University of Science and Technology',
+            position: 'Masters Degree in Information Systems',
+            address: 'Trondheim, Norway',
+            data: '08/2011 - 10/2014',
+            features: [
+              'Web Intelligence',
+              'Software Security',
+              'Model Driven Development of Information Systems',
+              'Customer Driven Project',
+              'Software Quality and Process Improvement',
+            ],
+            note: 'Learned Norwegian language for a year and completed 30 credits',
+          },
+        ]
+      }
+    ],
+    languages: {
+      all : [ 'English', 'Danish(B1), Nepali (Mother Tongue)', 'Hindi', 'Norwegian(B1)']
+    }
   }
 }

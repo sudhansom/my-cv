@@ -1,15 +1,15 @@
 <div class="main">
   <div class="header">
     <div class="name-image">
-      <h2 class="name">Bhuwan Krishna Som Poudel</h2>
-      <img class="image" src="../../../assets/images/my-image.png" alt="">
+      <h2 class="name">{{myself?.['name']}}</h2>
+      <img class="image" src="{{myself?.['image']}}" alt="">
     </div>
     <p class="contacts">
-      <span title="Frederikssundsvej 418, 2700">Copenhagen, Denmark</span>
-      <a href="tel: 004581916893" class="contact">+4581916893</a>
-      <a href="mailto: bkspoudel@gmail.com" class="contact">bkspoudel@gmail.com</a>
-      <a title="link to LinkedIn" class="contact" href="https://www.linkedin.com/feed/">LinkedIn</a>
-      <a title="link to github" class="contact" href="https://github.com/sudhansom?tab=repositories">Github</a>
+      <span title="Frederikssundsvej 418, 2700">{{myself?.['address']}}</span>
+      <a href="tel: {{myself?.['phone']}}" class="contact">{{myself?.['phone']}}</a>
+      <a href="mailto: {{myself?.['email']}}" class="contact">{{myself?.['email']}}</a>
+      <a title="link to LinkedIn" class="contact" href="{{myself?.['linkedIn']}}">LinkedIn</a>
+      <a title="link to github" class="contact" href="{{myself?.['gitHub']}}">GitHub</a>
     </p>
   </div>
 
