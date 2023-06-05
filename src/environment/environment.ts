@@ -108,7 +108,7 @@ export const environment = {
               'Customer Driven Project',
               'Learned React, Express, Redux, Html, Css , TypeScript',
             ],
-            note: 'Learned Norwegian language for a year and completed 30 credits',
+            note: 'Learned to work in team.',
           },
         ]
       },
