@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 interface ISelf {
   [key: string]: string;
@@ -20,15 +21,16 @@ interface IExperience {
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  styleUrls: ['./main.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MainComponent {
   @Input() myself: ISelf = {};
   @Input() experience: IExperience[] = [];
   @Input() languages: string[] = [];
-  showMore = 1;
+  showMore$ = new BehaviorSubject(1);
 
   expand(i: number){
-    this.showMore = i;
+    this.showMore$.next(i);
   }
 }

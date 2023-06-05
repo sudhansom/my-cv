@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { environment } from 'src/environment/environment';
 
 interface ISelf {
@@ -8,7 +8,8 @@ interface ISelf {
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss']
+  styleUrls: ['./resume.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ResumeComponent {
   mySkills: {

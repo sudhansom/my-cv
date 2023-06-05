@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ModalFormComponent } from '../modal-form/modal-form.component';
 import { DynamicDialogRef } from 'primeng/dynamicdialog';
 import { DialogService } from 'primeng/dynamicdialog';
@@ -7,7 +7,8 @@ import { PlatformLocation } from '@angular/common';
 @Component({
   selector: 'app-aside',
   templateUrl: './aside.component.html',
-  styleUrls: ['./aside.component.scss']
+  styleUrls: ['./aside.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AsideComponent {
   @Input() mySkills: {
