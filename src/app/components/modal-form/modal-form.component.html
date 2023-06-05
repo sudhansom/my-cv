@@ -1,7 +1,7 @@
 <div class="modal-container">
   <div class="modal-container__content">
-    <h2 class="header">{{ config.data.item | uppercase }}</h2>
-    <p class="description">description of the {{ config.data.item }}</p>
+    <h2 class="header">{{ config.data.item.tech | uppercase }}</h2>
+    <p class="description">{{ config.data.item.details }}</p>
   </div>
   <div class="modal-container__buttons">
     <button (click)="close()">Okay</button>

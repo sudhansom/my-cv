@@ -7,5 +7,8 @@ import { environment } from 'src/environment/environment';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent {
-  mySkills = environment.data.myKills;
+  mySkills: {
+    tech: string,
+    details: string,
+  }[] = environment.data.myKills;
 }

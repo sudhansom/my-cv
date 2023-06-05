@@ -10,7 +10,10 @@ import { PlatformLocation } from '@angular/common';
   styleUrls: ['./aside.component.scss']
 })
 export class AsideComponent {
-  @Input() mySkills: string[] = [];
+  @Input() mySkills: {
+    tech: string,
+    details: string,
+  }[] = [];
 
   constructor(
     private dialogService: DialogService,
