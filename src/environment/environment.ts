@@ -90,7 +90,7 @@ export const environment = {
               'Scss',
               'Html',
             ],
-            note: 'something here ................................................ from experience',
+            note: 'Learning new things everyday while working in real projects.',
           },
           {
             name: 'Integrify Academy International',
