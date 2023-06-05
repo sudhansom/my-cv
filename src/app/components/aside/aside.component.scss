@@ -1,6 +1,47 @@
 :host {
+  --_space: 30px;
+  --base-font-size: 18px;
+  --hover-scale: 1.5;
   display: block;
-  p {
-    margin: 0;
+  .my-skills {
+    list-style-type: none;
+    border-left: 1px solid #fff;
+    margin: 0 0 0 calc(var(--_space) * 2);
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    padding: 0;
+    &__skill {
+     padding: var(--_space);
+     color: #fff;
+     cursor: pointer;
+     position: relative;
+     transition: all .3s ease-in-out;
+     &::after {
+      content: '';
+      position: absolute;
+      top: calc(var(--_space) + var(--base-font-size)/2);
+      left: 0;
+      width: 6px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-color: #fff;
+      transform: translate(-50%, -50%);
+      outline: 6px solid #d0c9c9;
+      transition: all .3s ease-in-out;
+     }
+      &:hover:after {
+        width: 9px;
+        outline: 9px solid #d0c9c9;
+        top: calc(var(--_space) + var(--base-font-size) * var(--hover-scale) /2);
+      }
+      &:hover {
+        font-size: calc(var(--base-font-size)* var(--hover-scale));
+      }
+    }
+    &:hover {
+      border-color: green;
+    }
   }
 }

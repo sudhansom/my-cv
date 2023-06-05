@@ -1,10 +1,10 @@
 :host {
-  background-color: #123456;
-  min-height: 100vh;
-  max-width: 1500px;
-  margin: auto;
 
   .my-resume {
+    background-color: #123456;
+    min-height: 100vh;
+    max-width: 1500px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
