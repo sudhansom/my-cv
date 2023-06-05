@@ -15,52 +15,37 @@
   </div>
 
 
+  <section *ngFor="let item of experience" class="section">
+    <h3 class="topics">{{item.type}}</h3>
+    <hr>
+    <div class="all-sections">
+      <div class="each-section" *ngFor="let eachItem of item?.all">
+        <h4 class="company-name">{{eachItem?.['name']}}</h4>
+        <p class="position">{{eachItem?.['position']}}</p>
+        <div class="address-duration">
+          <p class="address">{{eachItem?.['address']}}</p>
+          <p class="duration">{{eachItem?.['date']}}</p>
+        </div>
+        <hr>
+        <h5 class="heading">Coursework:</h5>
+        <ul class="features">
+          <li *ngFor="let feature of eachItem?.features">{{feature}}</li>
+        </ul>
+        <p *ngIf="eachItem?.note" class="note">{{eachItem?.note}}</p>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
-  <h3 class="topics">Education</h3>
-  <hr>
-  <div class="all-sections">
-    <div class="each-section">
-      <h4 class="company-name">Norwegian University of Science and Technology</h4>
-      <p class="position">Masters Degree in Information Systems</p>
-      <div class="address-duration">
-        <p class="address">Trondheim, Norway</p>
-        <p class="duration"> 08/2011 - 10/2014</p>
-      </div>
-      <hr>
-      <h5 class="heading">Coursework:</h5>
-      <ul class="features">
-        <li>Web Intelligence</li>
-        <li>Software Security</li>
-        <li>Model Driven Development of Information Systems</li>
-        <li>Customer Driven Project</li>
-        <li>Software Quality and Process Improvement</li>
-      </ul>
-      <p class="note">Learned Norwegian language for a year and completed 30 credits</p>
-    </div>
-    <div class="each-section">
-      <h4 class="company-name">Advanced Engineering College</h4>
-      <p class="position">Bachelors in Computer Engineering</p>
-      <div class="address-duration">
-        <p class="address">Kathmandu, Nepal</p>
-        <p class="duration"> 08/2001 - 10/2005</p>
-      </div>
-      <hr>
-      <h5 class="heading">Coursework:</h5>
-      <ul class="features">
-        <li>Computer programming with C , C++</li>
-        <li>Artificial Intelligence</li>
-        <li>Software Security</li>
-        <li>Numerical Methodes</li>
-        <li>Digital Signal Processing</li>
-        <li>Microprocessor</li>
-      </ul>
-      <p class="note">Library Management Systems using JSP and apache server.</p>
-    </div>
-  </div>
+    <h3 class="topics">Languages</h3>
+    <hr>
+    <p class="languages">
+      <span *ngFor="let lang of languages">{{lang}}</span>
+    </p>
   </section>
 
 
-  <section class="section">
+  <!-- <section class="section">
     <h3 class="topics">Work Experience</h3>
     <hr>
     <div class="all-sections">
@@ -147,6 +132,6 @@
     <h3 class="topics">Languages</h3>
     <hr>
     <p>English | Danish(B1) | Nepali | Hindi | Norwegian(B1)</p>
-  </section>
+  </section> -->
 
 </div>

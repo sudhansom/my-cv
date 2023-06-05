@@ -17,4 +17,6 @@ export class ResumeComponent {
   }[] = environment.data.myKills;
 
   myself: ISelf = environment.data.myself;
+  experience = environment.data.experience;
+  languages = environment.data.languages;
 }

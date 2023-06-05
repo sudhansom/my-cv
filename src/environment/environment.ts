@@ -43,13 +43,13 @@ export const environment = {
     },
     experience : [
       {
-        type: 'Education',
+        type: 'Education1',
         all: [
           {
             name: 'Norwegian University of Science and Technology',
             position: 'Masters Degree in Information Systems',
             address: 'Trondheim, Norway',
-            data: '08/2011 - 10/2014',
+            date: '08/2011 - 10/2014',
             features: [
               'Web Intelligence',
               'Software Security',
@@ -63,7 +63,7 @@ export const environment = {
             name: 'Norwegian University of Science and Technology',
             position: 'Masters Degree in Information Systems',
             address: 'Trondheim, Norway',
-            data: '08/2011 - 10/2014',
+            date: '08/2011 - 10/2014',
             features: [
               'Web Intelligence',
               'Software Security',
@@ -76,13 +76,13 @@ export const environment = {
         ]
       },
       {
-        type: 'Work Experience',
+        type: 'Work Experience1',
         all: [
           {
             name: 'Norwegian University of Science and Technology',
             position: 'Masters Degree in Information Systems',
             address: 'Trondheim, Norway',
-            data: '08/2011 - 10/2014',
+            date: '08/2011 - 10/2014',
             features: [
               'Web Intelligence',
               'Software Security',
@@ -96,7 +96,7 @@ export const environment = {
             name: 'Norwegian University of Science and Technology',
             position: 'Masters Degree in Information Systems',
             address: 'Trondheim, Norway',
-            data: '08/2011 - 10/2014',
+            date: '08/2011 - 10/2014',
             features: [
               'Web Intelligence',
               'Software Security',
@@ -109,13 +109,13 @@ export const environment = {
         ]
       },
       {
-        type: 'Leadership Experience',
+        type: 'Leadership Experience1',
         all: [
           {
             name: 'Norwegian University of Science and Technology',
             position: 'Masters Degree in Information Systems',
             address: 'Trondheim, Norway',
-            data: '08/2011 - 10/2014',
+            date: '08/2011 - 10/2014',
             features: [
               'Web Intelligence',
               'Software Security',
@@ -129,7 +129,7 @@ export const environment = {
             name: 'Norwegian University of Science and Technology',
             position: 'Masters Degree in Information Systems',
             address: 'Trondheim, Norway',
-            data: '08/2011 - 10/2014',
+            date: '08/2011 - 10/2014',
             features: [
               'Web Intelligence',
               'Software Security',
@@ -142,8 +142,6 @@ export const environment = {
         ]
       }
     ],
-    languages: {
-      all : [ 'English', 'Danish(B1), Nepali (Mother Tongue)', 'Hindi', 'Norwegian(B1)']
-    }
+    languages: [ 'English', 'Danish(B1)',  'Nepali (Mother Tongue)', 'Hindi', 'Norwegian(B1)']
   }
 }

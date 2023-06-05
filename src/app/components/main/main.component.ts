@@ -4,6 +4,19 @@ interface ISelf {
   [key: string]: string;
 }
 
+
+interface IExperience {
+  type: string,
+  all : {
+    name: string,
+    position: string,
+    address: string,
+    date: string,
+    features: string[],
+    note: string,
+  }[],
+}
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -11,4 +24,6 @@ interface ISelf {
 })
 export class MainComponent {
   @Input() myself: ISelf = {};
+  @Input() experience: IExperience[] = [];
+  @Input() languages: string[] = [];
 }
