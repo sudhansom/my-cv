@@ -28,7 +28,8 @@ export class AsideComponent {
       modal: true,
       dismissableMask: true,
       style: {
-        minWidth: '500px',
+        minWidth: '300px',
+        maxWidth: '500px',
       },
       data: {
         item: item,

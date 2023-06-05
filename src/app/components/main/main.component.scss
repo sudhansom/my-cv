@@ -31,8 +31,9 @@
     .contacts {
       display: flex;
       justify-content: space-between;
-      .social-media {
+      .contact {
         color: #fff;
+        text-decoration: none;
       }
     }
   }
