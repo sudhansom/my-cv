@@ -23,7 +23,7 @@ export class AsideComponent {
 
   seeDetails(item: any){
     this.ref = this.dialogService.open(ModalFormComponent, {
-      contentStyle: { overflow: 'auto', padding: '30px', 'border-radius': '5px', 'background-color': 'lightblue', 'box-shadow': 'rgba(0, 0, 0, 0.35) 0px 5px 15px'},
+      contentStyle: { overflow: 'auto', padding: '30px', 'border-radius': '10px', 'background-color': '#fff', 'box-shadow': 'rgba(0, 0, 0, 0.35) 0px 5px 15px'},
       showHeader: false,
       modal: true,
       dismissableMask: true,
