@@ -26,4 +26,9 @@ export class MainComponent {
   @Input() myself: ISelf = {};
   @Input() experience: IExperience[] = [];
   @Input() languages: string[] = [];
+  showMore = 1;
+
+  expand(i: number){
+    this.showMore = i;
+  }
 }

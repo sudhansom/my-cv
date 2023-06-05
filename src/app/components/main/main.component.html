@@ -7,18 +7,18 @@
     </div>
     <p class="contacts">
       <span title="Frederikssundsvej 418, 2700">{{myself?.['address']}}</span>
-      <a href="tel: {{myself?.['phone']}}" class="contact">{{myself?.['phone']}}</a>
-      <a href="mailto: {{myself?.['email']}}" class="contact">{{myself?.['email']}}</a>
+      <a title="click to call" href="tel: {{myself?.['phone']}}" class="contact">{{myself?.['phone']}}</a>
+      <a title="click to send email" href="mailto: {{myself?.['email']}}" class="contact">{{myself?.['email']}}</a>
       <a title="link to LinkedIn" class="contact" href="{{myself?.['linkedIn']}}">LinkedIn</a>
       <a title="link to github" class="contact" href="{{myself?.['gitHub']}}">GitHub</a>
     </p>
   </div>
 
 
-  <section *ngFor="let item of experience" class="section">
-    <h3 class="topics">{{item.type}}</h3>
+  <section *ngFor="let item of experience; let i=index;" class="section">
+    <h3 title="click to expand" class="topics" (click)="expand(i)">{{item.type}}</h3>
     <hr>
-    <div class="all-sections">
+    <div class="all-sections" *ngIf="i===showMore">
       <div class="each-section" *ngFor="let eachItem of item?.all">
         <h4 class="company-name">{{eachItem?.['name']}}</h4>
         <p class="position">{{eachItem?.['position']}}</p>
@@ -43,95 +43,4 @@
       <span *ngFor="let lang of languages">{{lang}}</span>
     </p>
   </section>
-
-
-  <!-- <section class="section">
-    <h3 class="topics">Work Experience</h3>
-    <hr>
-    <div class="all-sections">
-      <div class="each-section">
-        <h4 class="company-name">System & Metode A/S</h4>
-        <p class="position">Frontend Developer</p>
-        <div class="address-duration">
-          <p class="address">Hørsholm, Denmark</p>
-          <p class="duration"> 06/2022 - running</p>
-        </div>
-        <hr>
-        <h5 class="heading">Coursework:</h5>
-        <ul class="features">
-          <li>Pixel Perfect design</li>
-          <li>Angular Framework</li>
-          <li>Javascript </li>
-          <li>Scss</li>
-          <li>Html</li>
-        </ul>
-        <p class="note">Learned Norwegian language for a year and completed 30 credits</p>
-      </div>
-      <div class="each-section">
-        <h4 class="company-name">Integrify Academy International</h4>
-        <p class="position">Fullstack Developer</p>
-        <div class="address-duration">
-          <p class="address">Helsinki, Finland (Remote)</p>
-          <p class="duration"> 08/2021 - 07/2022</p>
-        </div>
-        <hr>
-        <h5 class="heading">Coursework:</h5>
-        <ul class="features">
-          <li>Todo-app using Bootstrap, Sass, Html, React/js</li>
-          <li>Data Analysis - MongoDB, Node.js React</li>
-          <li>Simple Web-app using RestAPI</li>
-          <li>Customer Driven Project</li>
-          <li>Learned React, Express, Redux, Html, Css , TypeScript</li>
-        </ul>
-        <p class="note">Developed few Fullstack projects and worked as a team-leader.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h3 class="topics">Leadership Experience</h3>
-    <hr>
-    <div class="all-sections">
-      <div class="each-section">
-        <h4 class="company-name">Cofoco Airport Solution</h4>
-        <p class="position">Packing Assistant (Team Leader)</p>
-        <div class="address-duration">
-          <p class="address">Kaastrup, Denmark</p>
-          <p class="duration"> 06/2015 - 01/2020</p>
-        </div>
-        <hr>
-        <h5 class="heading">Coursework:</h5>
-        <ul class="features">
-          <li>Led a team of 10 - 12 members to consistently pack food for more than 2000 customers every day.</li>
-          <li>Contributed towards the firm as a Logistic assistant for one year before promoted to a team leader.</li>
-          <li>Developed leadership skills to work in a team. </li>
-          <li>During this period to stay in touch in programming I used to solve online coding challenges in HackerRank,
-            CodeWars, and AlgoExpert (especially in Java and Python).</li>
-        </ul>
-        <p class="note">Learned Danish while working in team.</p>
-      </div>
-      <div class="each-section">
-        <h4 class="company-name">Sagarmatha Television</h4>
-        <p class="position">Engineer / Technician</p>
-        <div class="address-duration">
-          <p class="address">Helsinki, Finland (Remote)</p>
-          <p class="duration"> 09/2008 - 01/2011</p>
-        </div>
-        <hr>
-        <h5 class="heading">Coursework:</h5>
-        <ul class="features">
-          <li>Developed instructions to the news reader and all the technicians improving my interpersonal skills.</li>
-          <li>Managed a team of more than 15 members to work on several projects that involved a large community.</li>
-        </ul>
-        <p class="note">Developed leadership skills.>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h3 class="topics">Languages</h3>
-    <hr>
-    <p>English | Danish(B1) | Nepali | Hindi | Norwegian(B1)</p>
-  </section> -->
-
 </div>
