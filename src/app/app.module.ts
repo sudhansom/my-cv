@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { AsideComponent } from './components/aside/aside.component';
 import { MainComponent } from './components/main/main.component';
+import { TitleModule } from './directives/title/title.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MainComponent } from './components/main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TitleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
