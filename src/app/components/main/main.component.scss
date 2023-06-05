@@ -1,6 +1,101 @@
 :host {
+  --image-width: 60px;
   display: block;
-  p {
-    margin: 0;
+  margin-right: 36px;
+  color: #fff;
+  position: relative;
+  .header {
+    margin-bottom: 36px;
+    .name-image {
+      .name {
+        text-align: center;
+        margin: calc(var(--image-width)/2) auto;
+        font-size: 36px;
+      }
+      .image {
+        position: absolute;
+        top: 12px;
+        right: 0px;
+        width: var(--image-width);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .6s ease-in-out;
+        &:hover {
+          width: calc(var(--image-width) * 2);
+          top: calc(var(var(--image-width)/2));
+          right: calc(var(var(--image-width)/2));
+        }
+      }
+    }
+    .contacts {
+      display: flex;
+      justify-content: space-between;
+      .social-media {
+        color: #fff;
+      }
+    }
+  }
+  .section {
+    .topics {
+      font-size: 30px;
+      letter-spacing: 1.5px;
+      margin: 30px 0 0;
+    }
+    .all-sections {
+      display: flex;
+      gap: 30px;
+      .each-section {
+        margin-top: 18px;
+        background-color: #1a4571;
+        max-width: 500px;
+        border-radius: 10px;
+        padding: 15px 15px 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        letter-spacing: 1.2px;
+        .company-name {
+          margin: 0;
+          font-size: 20px;
+          line-height: 24px;
+          margin: 0 0 8px;
+        }
+        .position {
+          margin: 0;
+          font-size: 16px;
+          line-height: 18px;
+          margin: 0 0 12px;
+        }
+        .heading {
+          display: inline-block;
+          margin: 18px 0 0;
+          font-size: 20px;
+          border-bottom: 1px solid #fff;
+        }
+        .features {
+          margin: 0;
+          padding: 18px;
+          list-style-type:circle;
+          li {
+            padding-block: 3px;
+          }
+        }
+        .address-duration {
+          display: flex;
+          justify-content: space-between;
+          .address {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+          }
+          .duration {
+            font-style:italic;
+            margin: 0;
+          }
+        }
+        .note {
+          margin: 0;
+        }
+      }
+    }
   }
 }
