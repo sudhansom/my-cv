@@ -15,7 +15,7 @@ export const environment = {
         details: 'In my current job, I am using SCSS with BEM technology in angular.'
       },
       {
-        tech: 'javascrip',
+        tech: 'javascript',
         details: 'I have learned few programming languages such as Java, Python, C, C++, I am coding with Javascript in my current job and its fun.'
       },
       {
@@ -29,6 +29,10 @@ export const environment = {
       {
         tech: 'Node.js',
         details: 'I have good knowledge in vanilla Node.js. I have developed few backend APIs using express.'
+      },
+      {
+        tech: 'React js',
+        details: 'Created few projects using React js and Express.',
       },
     ],
     myself:
@@ -138,6 +142,6 @@ export const environment = {
         ]
       }
     ],
-    languages: [ 'English', 'Danish(B1)',  'Nepali (Mother Tongue)', 'Hindi', 'Norwegian(B1)']
+    languages: [ 'Nepali (Mother Tongue)', 'English', 'Danish(B1)', 'Hindi', 'Norwegian(B1)']
   }
 }

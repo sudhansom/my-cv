@@ -10,6 +10,7 @@ import { MainComponent } from './components/main/main.component';
 import { TitleModule } from './directives/title/title.module';
 import { ModalFormModule } from './components/modal-form/modal-form.module';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { SvgIconModule } from './directives/svg-icon/svg-icon.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
     AppRoutingModule,
     TitleModule,
     ModalFormModule,
+    SvgIconModule,
   ],
   providers: [DialogService, DynamicDialogRef],
   bootstrap: [AppComponent]
