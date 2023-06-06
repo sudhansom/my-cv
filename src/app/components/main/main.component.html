@@ -19,7 +19,7 @@
   <section *ngFor="let item of experience; let i=index;" class="section">
     <h3 title="click to expand" class="topics" (click)="expand(i)">{{item.type}}</h3>
     <hr>
-    <div class="all-sections" *ngIf="i===showMore$.getValue()">
+    <div class="all-sections" *ngIf="i===showMore$.getValue() || i===0">
       <div class="each-section" *ngFor="let eachItem of item?.all">
         <h4 class="company-name">{{eachItem?.['name']}}</h4>
         <p class="position">{{eachItem?.['position']}}</p>

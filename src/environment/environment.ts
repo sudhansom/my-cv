@@ -20,7 +20,7 @@ export const environment = {
       },
       {
         tech: 'Angular',
-        details: 'As the framework to Javascript, I started with React but now I have good experience with Angular'
+        details: 'As the framework to Javascript, I started with React but now I have good experience with Angular as I am currently working with it.'
       },
       {
         tech: 'MongoDB',
