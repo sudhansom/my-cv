@@ -9,8 +9,13 @@
     .name-image {
       .name {
         text-align: center;
-        margin: calc(var(--image-width)/2) auto;
+        margin: calc(var(--image-width)/2) auto 0;
         font-size: 36px;
+      }
+      .position {
+        text-align: center;
+        font-size: 24px;
+        margin: 0 0 24px;
       }
       .image {
         position: absolute;

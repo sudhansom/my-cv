@@ -75,7 +75,7 @@ export const environment = {
               'Digital Signal Processing',
               'Microprocessor - Machine Learning',
             ],
-            note: 'Learned Norwegian language for a year and completed 30 credits',
+            note: '52 subjects altogether and 2 projects with average grade of B',
           },
         ]
       },
@@ -86,7 +86,7 @@ export const environment = {
             name: 'System & Metode A/S',
             position: 'Frontend Developer',
             address: 'Hørsholm, Denmark',
-            date: '06/2022 - running',
+            date: '06/2022 - ongoing',
             features: [
               'Pixel Perfect design',
               'Angular Framework',
@@ -137,7 +137,7 @@ export const environment = {
               'Developed instructions to the news reader and all the technicians improving my interpersonal skills.',
               'Managed a team of more than 15 members to work on several projects that involved a large community.',
             ],
-            note: 'Learned Norwegian language for a year and completed 30 credits',
+            note: 'Learned to work in team.',
           },
         ]
       }

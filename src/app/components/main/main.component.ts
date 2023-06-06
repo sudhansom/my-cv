@@ -28,7 +28,7 @@ export class MainComponent {
   @Input() myself: ISelf = {};
   @Input() experience: IExperience[] = [];
   @Input() languages: string[] = [];
-  showMore$ = new BehaviorSubject(1);
+  showMore$ = new BehaviorSubject(0);
 
   expand(i: number){
     this.showMore$.next(i);
