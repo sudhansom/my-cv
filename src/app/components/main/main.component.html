@@ -2,16 +2,16 @@
 
   <div class="header">
     <div class="name-image">
-      <h2 class="name">{{myself?.['name']}}</h2>
+      <h2 class="name">Bhuwan Krishna Som Poudel</h2>
       <p class="position">Frontend Developer</p>
-      <img class="image" src="{{myself?.['image']}}" alt="">
+      <img class="image" [src]="'/assets/images/my-image.png'" alt="">
     </div>
     <p class="contacts">
-      <span title="Frederikssundsvej 418, 2700">{{myself?.['address']}}</span>
-      <a title="click to call" href="tel: {{myself?.['phone']}}" class="contact">{{myself?.['phone']}}</a>
-      <a title="click to send email" href="mailto: {{myself?.['email']}}" class="contact">{{myself?.['email']}}</a>
-      <a title="link to LinkedIn" class="contact" href="{{myself?.['linkedIn']}}">LinkedIn</a>
-      <a title="link to github" class="contact" href="{{myself?.['gitHub']}}">GitHub</a>
+      <span title="Frederikssundsvej 418, 2700">Copenhagen, Denmark</span>
+      <a title="click to call" href="tel: +4581916893" class="contact">004581916893</a>
+      <a title="click to send email" href="mailto: bkspoudel@gmail.com" class="contact">bkspoudel@gmail.com</a>
+      <a title="link to LinkedIn" class="contact" [href]="'https://www.linkedin.com/feed/'">LinkedIn</a>
+      <a title="link to github" class="contact" [href]="'https://github.com/sudhansom?tab=repositories'">GitHub</a>
       <a title="download pdf file"  href="../../../assets/pdf/cv.pdf" class="contact"><span [smSvgIcon]="'download'"></span></a>
     </p>
   </div>
