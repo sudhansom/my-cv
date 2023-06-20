@@ -1,0 +1,26 @@
+@mixin defineCustomFontFamily($font-name, $bold-font-weight) {
+  @font-face {
+    font-family: $font-name;
+    src: url("/assets/fonts/#{$font-name}/#{$font-name}-regular.ttf");
+  }
+  @font-face {
+    font-family: $font-name;
+    font-weight: $bold-font-weight;
+    src: url("/assets/fonts/#{$font-name}/#{$font-name}-bold.ttf");
+  }
+  @font-face {
+    font-family: $font-name;
+    src: url("/assets/fonts/#{$font-name}/#{$font-name}-bold-italic.ttf");
+    font-weight: $bold-font-weight;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: $font-name;
+    src: url("/assets/fonts/#{$font-name}/#{$font-name}-italic.ttf");
+    font-style: italic;
+  }
+  :root {
+    --font-family: #{$font-name}, sans-serif;
+    --bold-font-weight: #{$bold-font-weight};
+  }
+}
