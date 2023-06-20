@@ -19,17 +19,15 @@
       }
       .image {
         position: absolute;
-        top: 12px;
-        right: 0px;
+        top: 24px;
+        right: 24px;
         width: var(--image-width);
         aspect-ratio: 1;
         border-radius: 50%;
         cursor: pointer;
         transition: all .6s ease-in-out;
         &:hover {
-          width: calc(var(--image-width) * 2);
-          top: calc(var(var(--image-width)/2));
-          right: calc(var(var(--image-width)/2));
+          scale: 2;
         }
       }
     }
