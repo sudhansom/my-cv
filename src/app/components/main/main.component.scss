@@ -1,7 +1,7 @@
 :host {
   --image-width: 60px;
   display: block;
-  margin: 36px;
+  padding: 36px;
   color: #fff;
   position: relative;
   .header {
@@ -11,6 +11,9 @@
         text-align: center;
         margin: calc(var(--image-width)/2) auto 0;
         font-size: 36px;
+        @media(max-width: 768px){
+          font-size: 30px;
+        }
       }
       .position {
         text-align: center;
@@ -18,6 +21,9 @@
         margin: 0 0 24px;
       }
       .image {
+        @media(max-width: 768px){
+          display: none;
+        }
         position: absolute;
         top: 24px;
         right: 24px;
@@ -27,13 +33,17 @@
         cursor: pointer;
         transition: all .6s ease-in-out;
         &:hover {
-          scale: 2;
+          scale: 1.8;
         }
       }
     }
     .contacts {
       display: flex;
       justify-content: space-between;
+      @media(max-width: 768px){
+        flex-direction: column;
+        gap: 10px;
+      }
       .contact {
         color: #fff;
         text-decoration: none;
@@ -60,6 +70,10 @@
     .all-sections {
       display: flex;
       gap: 30px;
+      @media(max-width: 768px){
+        flex-direction: column;
+        gap: 12px;
+      }
       .each-section {
         margin-top: 18px;
         background-color: #1a4571;
@@ -120,6 +134,10 @@
     .languages {
       display: flex;
       justify-content: space-between;
+      @media(max-width: 768px){
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   }
 }

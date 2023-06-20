@@ -4,6 +4,9 @@
   --hover-scale: 1.1;
   display: block;
   .my-skills {
+    @media(max-width: 768px){
+      display: none;
+    }
     list-style-type: none;
     border-left: 1px solid #fff;
     margin: 0 0 0 calc(var(--_space) * 2);
