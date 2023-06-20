@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,7 @@ import { TitleModule } from './directives/title/title.module';
 import { ModalFormModule } from './components/modal-form/modal-form.module';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { SvgIconModule } from './directives/svg-icon/svg-icon.module';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { SvgIconModule } from './directives/svg-icon/svg-icon.module';
     AppRoutingModule,
     TitleModule,
     ModalFormModule,
-    SvgIconModule,
+    SvgIconModule
   ],
   providers: [DialogService, DynamicDialogRef],
   bootstrap: [AppComponent]
