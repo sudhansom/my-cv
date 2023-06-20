@@ -34,6 +34,14 @@ export const environment = {
         tech: 'React js',
         details: 'Created few projects using React js and Express.',
       },
+      {
+        tech: 'Git',
+        details: 'Pretty good in Git. Worked in a team using GitLab as Version Controlled System.',
+      },
+      {
+        tech: 'SQL',
+        details: 'I have completed 30 credits in SQL database. It was fun learning database.'
+      },
     ],
     myself:
     {
@@ -88,11 +96,12 @@ export const environment = {
             address: 'Hørsholm, Denmark',
             date: '06/2022 - ongoing',
             features: [
-              'Pixel Perfect design',
-              'Angular Framework',
-              'Javascript',
-              'Scss',
-              'Html',
+              'Highly search engine optimized website.',
+              'Project management using gitlab.',
+              'Responsive website, not just for few breakpoints but fluid width.',
+              'Optimized angular component by reducing unnecessary render cycle',
+              ' Worked on multiple clients/projects and the same time.',
+              ' Also used external framework when required. For ex Primeng'
             ],
             note: 'Learning new things everyday while working in real projects.',
           },
@@ -142,6 +151,6 @@ export const environment = {
         ]
       }
     ],
-    languages: [ 'Nepali (Mother Tongue)', 'English', 'Danish(B1)', 'Hindi', 'Norwegian(B1)']
+    languages: ['English(proficient)', 'Danish(intermediate: completed PD3)', 'Nepali (Mother Tongue)']
   }
 }
